@@ -1,0 +1,6 @@
+__pycache__
+.venv
+.vscode
+.env
+proxmox_get_cert.service
+proxmox_get_cert.timer
