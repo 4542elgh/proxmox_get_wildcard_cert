@@ -13,13 +13,15 @@ I am aware with DNS wildcard cert. I can perform renewal from homelab cerbot its
 - Sends notifications via [Apprise](https://github.com/caronc/apprise-api) or [Discord webhook](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 
 # Usage
-## 1. **Configure Environment Variables**
-   Copy `.env.example` to `.env` and update its values. Notification is optional.
-## 2. **Create virtual environment**
+## 1. Configure Environment Variables
+Copy `.env.example` to `.env` and update its values. Notification is optional.
+
+## 2. Create virtual environment
 ```bash
 python3 -m venv .venv
 ```
-## 3. **Activate virtual environment**
+
+## 3. Activate virtual environment
 ```bash
 source .venv/bin/activate
 ```
@@ -27,14 +29,17 @@ Windows user
 ```ps1
 .venv/bin/activate.ps1
 ```
-## 4. **Install Dependencies**
-```
+
+## 4. Install Dependencies
+```bash
 pip install -r requirements.txt
 ```
-## 5. **Run the Script**
-```
+
+## 5. Run the Script
+```bash
 python3 main.py
 ```
+
 # Environment Variables
 See `.env.example` for required and optional variables.
 
