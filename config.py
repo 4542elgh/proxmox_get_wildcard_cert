@@ -10,7 +10,8 @@ REMOTE_URL:str = os.getenv("REMOTE_URL", "")
 REMOTE_CERT_LOCATION:str = os.getenv("REMOTE_CERT_LOCATION", "")
 LOCAL_CERT_LOCATION:str = os.getenv("LOCAL_CERT_LOCATION", "")
 
-# Optional and can be None
+# Optional and can be None (empty)
 NOTIFICATION_SERVICE:str | None = os.getenv("NOTIFICATION_SERVICE", None)
 WEBHOOK_URL:str | None = os.getenv("WEBHOOK_URL", None)
 APPRISE_TAG:str | None = os.getenv("APPRISE_TAG", None)
+VERBOSE:bool = os.getenv("VERBOSE", 'False').lower() in ('true', '1', 't')
